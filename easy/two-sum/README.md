@@ -1,8 +1,10 @@
 # 原題
 [two-sum](https://leetcode.com/problems/two-sum/)
-# 問
-整数の配列が与えられたとき，特定の目標に足し算されるような2つの数値のインデックスを返します。
+## カテゴリ
+hashmap
 
+# 問
+整数の配列が与えられたとき，特定の目標に足し算されるような2つの数値のインデックスを返します。 
 各入力が正確に1つの解を持つと仮定して、同じ要素を2回使用することはできません。
 
 ## 例
@@ -30,6 +32,8 @@ return [0, 1].
 
 # result
 ```
+2つの数値の組み合わせなので、ほしい数値をHashmapで検索させることができる。  
+
 Runtime: 36 ms, faster than 76.02% of Ruby online submissions for Two Sum.
 Memory Usage: 10.1 MB, less than 27.27% of Ruby online submissions for Two Sum.
 ```
