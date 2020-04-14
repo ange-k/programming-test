@@ -1,19 +1,32 @@
 # 原題
-[two-sum](https://leetcode.com/problems/two-sum/)
+[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 ## カテゴリ
-hashmap
+LinkedList
 
 # 問
-整数の配列が与えられたとき，特定の目標に足し算されるような2つの数値のインデックスを返します。
-
-各入力が正確に1つの解を持つと仮定して、同じ要素を2回使用することはできません。
+リンクされたリストが与えられたとき、そのリストにサイクルがあるかどうかを判断します。  
+与えられたリンクリスト内のサイクルを表現するために、  
+リンクリスト内の末尾が接続する位置（インデックス0）を表す整数posを使用します。  
+posが-1の場合、リンク先リストにはサイクルはありません。
 
 ## 例
+### 例1
 ```
-Given nums = [2, 7, 11, 15], target = 9,
-
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: リンクされたリストには、tailが2番目のノードに接続するサイクルがあります。
+```
+### 例2
+```
+Input: head = [1,2], pos = 0
+Output: true
+Explanation: リンクされたリストには、末尾が最初のノードに接続するサイクルがあります。
+```
+### 例3
+```
+Input: head = [1], pos = -1
+Output: false
+Explanation: リンク先のリストにはサイクルがありません。
 ```
 
 ## hint1
