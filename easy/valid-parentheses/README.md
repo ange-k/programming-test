@@ -67,6 +67,10 @@ Output: true
 私たちは全体の構造についてのアイデアを持っていないので、これを内側から外側に処理することはできません。しかし、スタックはこれを再帰的に処理するのに役立ちます。
 
 # result
+Stack構造を利用する。左括弧はStackにPushしていき、  
+右括弧はPopする。Popした括弧が対応すれば継続し、一致しなければ有効でないとみなす。  
+また、処理が完了した段階でStackに括弧が残っていても有効でないとみなす。
 ```
-
+Runtime: 28 ms, faster than 96.95% of Ruby online submissions for Valid Parentheses.
+Memory Usage: 9.3 MB, less than 100.00% of Ruby online submissions for Valid Parentheses.
 ```
