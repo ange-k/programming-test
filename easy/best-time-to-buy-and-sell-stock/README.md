@@ -27,3 +27,17 @@ Output: 0
 Explanation:
  この場合、取引は行われない、つまり最大利益＝0となります。
 ```
+
+# result
+minPriceを無限とかにすると速度が悪化する。  
+要件理解のほうが重要で、これに気づくと常にO(n)の計算で処理が完了することがわかる。  
+すなわち、
+- 一番小さな購入価格
+- 一番高い利益が出る箇所
+
+に着目すれば良いので、全数検索したりしなくてもよい。
+
+```
+Runtime: 36 ms, faster than 77.36% of Ruby online submissions for Best Time to Buy and Sell Stock.
+Memory Usage: 9.9 MB, less than 100.00% of Ruby online submissions for Best Time to Buy and Sell Stock.
+```
