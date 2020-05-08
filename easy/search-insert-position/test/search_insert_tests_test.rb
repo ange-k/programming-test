@@ -22,4 +22,8 @@ class SearchInsertTestsTest < MiniTest::Unit::TestCase
     result = search_insert([1,3], 3)
     assert result == 1
   end
+  def test_example6
+    result = search_insert([1,2,4,8,16,32,64,128], 3)
+    assert result == 2
+  end
 end
