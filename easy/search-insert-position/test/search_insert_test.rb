@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../main'
 
-class SearchInsertTestsTest < MiniTest::Unit::TestCase
+class SearchInsertTest < MiniTest::Unit::TestCase
   def test_example1
     result = search_insert([1,3,5,6], 5)
     assert result == 2
